@@ -15,9 +15,9 @@
     "node": ">=12"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 4000",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 4000",
     "test:e2e": "npm run cy:run --",
     "deploy": "vercel -S carbon-app",
     "prettier": "prettier --config .prettierrc --write {.,components,lib,pages}/*.js {components,lib,pages}/**/*.js",
