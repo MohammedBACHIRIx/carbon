@@ -172,7 +172,7 @@ const DropdownIcon = ({ children, isOpen }) => {
               width: 40px;
               height: 40px;
               box-shadow: inset 0px 0px 0px ${isOpen ? 2 : 1}px white;
-              border-radius: 3px 0 0 3px;
+              border-radius: 8px 0 0 8px;
               cursor: initial;
             }
           `}
@@ -217,16 +217,18 @@ const SelectedItem = ({
             height: 40px;
             padding: 0 16px;
             box-shadow: inset 0px 0px 0px 1px ${itemColor};
-            border-radius: ${hasIcon ? '0 3px 3px 0' : '3px'};
+            border-radius: ${hasIcon ? '0 8px 8px 0' : '8px'};
             outline: none;
+            transition: all 0.2s ease;
           }
           .dropdown-display:hover,
           .dropdown-display:focus {
             background: ${COLORS.HOVER};
+            box-shadow: inset 0px 0px 0px 1px ${itemColor}, 0 4px 12px rgba(0, 0, 0, 0.15);
           }
 
           .dropdown-display.is-open {
-            border-radius: ${hasIcon ? '0 3px 0 0' : '3px 3px 0 0'};
+            border-radius: ${hasIcon ? '0 8px 0 0' : '8px 8px 0 0'};
             box-shadow: inset 0px 0px 0px 2px ${itemColor};
           }
 

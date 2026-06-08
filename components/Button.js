@@ -41,17 +41,19 @@ const Button = ({
           border: none;
           padding: ${padding};
           margin: ${margin};
-          border-radius: ${border ? '3px' : 0};
+          border-radius: ${border ? '8px' : 0};
           user-select: none;
           justify-content: ${center ? 'center' : 'initial'};
           align-items: ${center ? 'center' : 'initial'};
           align-self: stretch;
           font-size: ${large ? '14px' : '12px'};
+          transition: all 0.2s ease;
         }
 
         ${Component}:hover, ${Component}:focus {
           background-color: ${hoverBackground} !important;
           color: ${hoverColor || color};
+          box-shadow: ${border ? `inset 0px 0px 0px ${selected ? 2 : 1}px ${color}, 0 4px 12px rgba(0, 0, 0, 0.15)` : '0 4px 12px rgba(0, 0, 0, 0.15)'};
         }
 
         ${Component}:focus {

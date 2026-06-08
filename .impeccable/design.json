@@ -1,0 +1,16 @@
+{
+  "project": "carbon",
+  "philosophy": "The Aesthetic Creator",
+  "rules": [
+    "Glassmorphism and dark mode.",
+    "Soft glow effects for hover.",
+    "Premium feel with rounded corners (12px panels)."
+  ],
+  "colors": {
+    "background": "#121212",
+    "primary": "#3B82F6"
+  },
+  "fonts": {
+    "primary": "Inter"
+  }
+}
