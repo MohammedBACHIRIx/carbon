@@ -18,7 +18,7 @@ module.exports = withBundleAnalyzer(
       config.plugins.push(
         new options.webpack.IgnorePlugin({
           resourceRegExp: /\.css$/,
-          contextRegExp: /node_modules\/codemirror\/mode/,
+          contextRegExp: /node_modules[\\/]codemirror[\\/]mode/,
         })
       )
 
