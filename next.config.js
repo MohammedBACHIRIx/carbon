@@ -1,16 +1,8 @@
 const bundleAnalyzer = require('@next/bundle-analyzer')
-const withOffline = require('next-pwa')
-
 const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'true' })
 
 module.exports = withBundleAnalyzer(
-  withOffline({
-    pwa: {
-      disable: process.env.NODE_ENV !== 'production',
-      dest: 'public',
-      register: false,
-      skipWaiting: false,
-    },
+  {
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.js$/,
@@ -84,5 +76,5 @@ module.exports = withBundleAnalyzer(
         },
       ]
     },
-  })
+  }
 )
