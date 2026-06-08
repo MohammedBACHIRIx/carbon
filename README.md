@@ -123,6 +123,13 @@ You know [all](https://twitter.com/dan_abramov/status/890191815567175680) [of th
   a link with one click
 - **Save snippets**. Create an account to save snippets for later. Shared snippets are automatically unfurled on Twitter and Slack.
 
+## Fork Modifications
+
+- **Enhanced UI**: Completely redesigned the interface with modern aesthetics, vibrant gradients, and premium styling.
+- **Development Setup**: The default development server now runs on port 4000 (`pnpm run dev`).
+- **Windows Build Fix**: Resolved Next.js Global CSS import build errors specifically on Windows environments.
+- **PWA Bypass**: Disabled `next-pwa` in the config to improve development stability.
+
 ## Usage
 
 #### Import
